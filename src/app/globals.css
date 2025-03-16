@@ -3,20 +3,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bg-gray-dark: #abb8c3;
+  --bg-gray-light: #6b6c70;
+  --bg-gray-extra-light: #abb8c3;
+  --bg-button: rgb(56, 87, 119);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-bg-gray-dark: var(--bg-gray-dark);
+  --color-bg-gray-light: var(--bg-gray-light);
+  --color-bg-gray-extra-light: var(--bg-gray-extra-light);
+  --color-button: var(--bg-button);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
