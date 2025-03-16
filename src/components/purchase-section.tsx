@@ -47,7 +47,7 @@ const PurchaseSection = () => {
           </h2>
           <div className="w-16 h-1 bg-bg-gray-dark mx-auto mb-6" />
           <p className="text-foreground/70">
-            Find "The Art of Timeless Stories" at your favorite retailers
+            Find &quot;The Art of Timeless Stories&quot; at your favorite retailers
           </p>
         </div>
 

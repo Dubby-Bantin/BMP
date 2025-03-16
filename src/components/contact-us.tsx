@@ -48,14 +48,12 @@ const ContactSection = () => {
             <span className="inline-block px-3 py-1 bg-bg-gray-dark/10 text-book-accent text-xs font-medium rounded-full mb-4">
               Get in Touch
             </span>
-            <h2 className=" text-3xl md:text-4xl font-bold mb-4">
-              Contact Us
-            </h2>
+            <h2 className=" text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
             <div className="w-16 h-1 bg-book-accent mb-6" />
 
             <p className="text-lg text-foreground/80 mb-8 max-w-lg">
               Have questions about the book, author appearances, or media
-              inquiries? We'd love to hear from you.
+              inquiries? We&apos;d love to hear from you.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -81,13 +79,11 @@ const ContactSection = () => {
             </div>
 
             <div className="p-6 bg-bg-gray-dark/5 rounded-lg border border-bg-gray-dark/10">
-              <h3 className=" text-lg font-medium mb-3">
-                Book Club Resources
-              </h3>
+              <h3 className=" text-lg font-medium mb-3">Book Club Resources</h3>
               <p className="text-foreground/70 mb-4">
-                Interested in featuring "The Art of Timeless Stories" in your
-                book club? Contact us for discussion guides, virtual author
-                visits, and special book club discounts.
+                Interested in featuring &quot;The Art of Timeless Stories&quot;
+                in your book club? Contact us for discussion guides, virtual
+                author visits, and special book club discounts.
               </p>
               <a
                 href="#"
@@ -100,9 +96,7 @@ const ContactSection = () => {
 
           {/* Form Column */}
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h3 className=" text-xl font-bold mb-6">
-              Send a Message
-            </h3>
+            <h3 className=" text-xl font-bold mb-6">Send a Message</h3>
 
             {submitMessage ? (
               <div className="bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 mb-6">
