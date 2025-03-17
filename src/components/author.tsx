@@ -1,8 +1,8 @@
 "use client";
 import { authorData } from "@/lib/utils/constants";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
-import { FaUser } from "react-icons/fa6";
 
 const AuthorSection = () => {
   const {
@@ -28,7 +28,11 @@ const AuthorSection = () => {
           <div className="relative">
             <div className="aspect-[4/5] bg-bg-gray-dark rounded-lg overflow-hidden shadow-xl">
               <div className="w-full h-full bg-gradient-to-br from-book-primary/20 to-book-accent/20 flex items-center justify-center">
-                <FaUser size={100} className="text-book-muted/30" />
+                <Image
+                  layout="fill"
+                  src={"/images/book_cover.png"}
+                  alt="book_image"
+                />
               </div>
             </div>
 

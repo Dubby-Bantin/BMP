@@ -64,8 +64,10 @@ const Banner = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 1.5 }}
           className="text-lg mb-6"
         >
-          The new novel from{" "}
-          <span className="font-semibold">Blaine Pearson</span>
+          A story of how one hungry young man in a hurry triumphed over poverty
+          and child labor in Nigeria to walk the halls of corporate giants in
+          the United States and the United Kingdom.
+          {/* <span className="font-semibold">Blaine Pearson</span> */}
         </motion.p>
         <motion.button
           initial={{ opacity: 0, y: 30 }}
@@ -73,7 +75,7 @@ const Banner = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 2 }}
         >
           <Link
-            href="/read-more"
+            href="testimonials"
             className="px-8 py-4 rounded-full bg-button font-semibold hover:bg-gray-100 hover:text-button transition duration-300"
           >
             READ MORE

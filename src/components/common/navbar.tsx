@@ -7,10 +7,12 @@ import { motion, AnimatePresence } from "framer-motion";
 // Define your navigation links
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Products", href: "/products" },
-  { name: "Features", href: "/features" },
-  { name: "Shortcodes", href: "/shortcodes" },
-  { name: "Post Types", href: "/post-types" },
+  { name: "About", href: "/#about" },
+  { name: "Author", href: "/#author" },
+  { name: "Reviews", href: "/#reviews" },
+  { name: "Blog", href: "/#blog" },
+  { name: "Book club", href: "/#bookclub" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 const Navbar = () => {

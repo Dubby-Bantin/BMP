@@ -30,7 +30,7 @@ const aboutData = {
   description:
     "Discover the journey, themes, and inspiration behind this captivating story.",
   bookDescription:
-    '"The Art of Timeless Stories" takes readers on a journey through the life of protagonist Alex Rivera, a struggling writer who discovers an ancient manuscript with the power to bring stories to life. Set against the backdrop of modern New York and ancient Alexandria, the novel explores themes of creativity, legacy, and the enduring power of storytelling.',
+    '"Giving unmanaged aid and assistance, unwittingly creating dependencies, do not alleviate poverty. This book is a story of how one hungry young man in a hurry  triumphed over poverty and child labor in Nigeria to walk the halls of corporate giants in the United States and the United Kingdom. The story, initially requested by his children, is dedicated to his late mother, Mary.',
   bookDetails: [
     {
       Icon: BiBookOpen,
@@ -50,25 +50,23 @@ const aboutData = {
   ],
   bookExcerpt: {
     quote:
-      '"The stories we tell define not just who we are, but who we might become. Each word written is a possibility, each sentence a new world waiting to be born."',
-    text: "Alex stared at the ancient parchment, its edges crumbling with age. The text seemed to shimmer as he read, the ink catching the light in impossible ways. He could feel the weight of centuries in every carefully inscribed letter, as if the very history of storytelling itself was being channeled through his fingertips.",
-    page: "Page 42",
+      '"Simultaneously, the book seeks to inspire all hungry young men and women all over the world to strive, undeterred, to live their own lives on their own terms, no matter their background and starting point to benefit themselves and the world at large. Despte missteps along the way, this young man in a hurry had a reasonably successful and content life with sufficient resources to invest in giving to others in need. This book, son of Mary, is a recipe with enough details on how the journey was completed, using learning and education as the primary tools of choice."',
+    text: "Imagine a world where aid between countries targets hungry young men and women in a hurry everywhere, guiding and helping them on their way to shoot for the stars. It's a win-win. What a better world it would be! ”",
   },
   readerReviews: {
     review:
-      '"A masterpiece that redefines the boundaries between reality and fiction. Doe\'s prose is elegant, her characters unforgettable."',
-    source: "— The Literary Review",
+      '"Giving unmanaged aid and assistance, unwittingly creating dependencies, do not alleviate poverty. This book is a story of how one hungry young man in a hurry triumphed over poverty and child labor in Nigeria to walk the halls of corporate giants in the United States and the United Kingdom. The story, initially requested by his children, is dedicated to his late mother, Mary."',
   },
 };
 
 const authorData = {
   tagline: "Meet the Author",
-  name: "Jane Doe",
+  name: " CHARLIE O UKWU",
   description:
-    "Jane Doe is an award-winning author known for her lyrical prose and complex, emotionally resonant characters.",
+    "Charlie O Ukwu was born the son of a coal miner at Iva Valley, near Enugu, Nigeria.",
   bio: [
-    "Born in Chicago and educated at Columbia University, Jane spent her early career as a journalist before publishing her first novel, 'Whispers in Winter,' which won the National Book Award.",
-    "Her work explores the intersection of history, mythology, and modern life, focusing on how ancient narratives continue to shape our understanding of ourselves and our place in the world.",
+    "Despite an exciting six-year job at the Nigerian Broadcasting Corporation, Charlie left, casting his faith to the wind, to pursue learning and education. He acquired multiple academic credentials: Diploma in Mass Communication (University of Lagos, Nigeria) BA in Journalism/Economics (Indiana University, Bloomington, USA) MA in Economics (Indiana University, Bloomington, USA) MBA in Business Computing Science (Texas A&M University, College Station, USA)",
+    "Charlie’s strategy of prioritizing education over immediate financial gain worked so well that he recommends it to young people. He believes that life’s mission should be bigger than just chasing money. Readers can explore this philosophy further in his upcoming book, Money Disorder.",
   ],
   achievements: [
     {
