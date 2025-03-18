@@ -43,7 +43,7 @@ const PurchaseSection = () => {
             Available Now
           </span>
           <h2 className=" text-3xl md:text-4xl font-bold mb-4">
-            Purchase Your Copy
+            Get a Copy
           </h2>
           <div className="w-16 h-1 bg-bg-gray-dark mx-auto mb-6" />
           <p className="text-foreground/70">

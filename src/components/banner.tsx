@@ -1,16 +1,24 @@
 "use client";
-import React from "react";
+import { motion } from "motion/react";
 import Link from "next/link";
-import Image from "next/image";
-import { cn } from "../lib/utils/cn";
-import { playwriteIT } from "../lib/utils/fonts";
-import { motion } from "framer-motion";
+import React from "react";
+// import Link from "next/link";
+// import Image from "next/image";
+// import { cn } from "../lib/utils/cn";
+// import { playwriteIT } from "../lib/utils/fonts";
+// import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <div className="relative h-[30rem] flex items-center justify-center text-white bg-cover bg-center bg-bg-gray-dark overflow-clip">
-      {/* Background Images */}
-      <motion.div
+    <div className="relative flex flex-col justify-center items-center text-white bg-[url(/images/book_cover.png)] bg-cover bg-no-repeat bg-center w-full md:min-h-[100vh] h-[45rem]">
+      <div
+        className="absolute inset-0 w-full h-full"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.8) 100%)",
+        }}
+      />
+      {/* <motion.div
         initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
         animate={{ opacity: 1, x: 0 }} // Animate to visible position
         transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
@@ -23,9 +31,9 @@ const Banner = () => {
           objectFit="cover"
           className="object-left"
         />
-      </motion.div>
+      </motion.div> */}
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, x: 100 }} // Start off-screen to the right
         animate={{ opacity: 1, x: 0 }} // Animate to visible position
         transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
@@ -38,7 +46,7 @@ const Banner = () => {
           objectFit="cover"
           className="object-right"
         />
-      </motion.div>
+      </motion.div> */}
 
       {/* Content */}
       <motion.div
@@ -47,7 +55,7 @@ const Banner = () => {
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
         className="relative text-center max-w-2xl px-4"
       >
-        <motion.h1
+        {/* <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 1 }}
@@ -57,7 +65,7 @@ const Banner = () => {
           )}
         >
           Publishing House
-        </motion.h1>
+        </motion.h1> */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -67,7 +75,6 @@ const Banner = () => {
           A story of how one hungry young man in a hurry triumphed over poverty
           and child labor in Nigeria to walk the halls of corporate giants in
           the United States and the United Kingdom.
-          {/* <span className="font-semibold">Blaine Pearson</span> */}
         </motion.p>
         <motion.button
           initial={{ opacity: 0, y: 30 }}

@@ -31,12 +31,9 @@ const AboutSection = () => {
           className=" gap-12 items-center transition-all duration-700"
         >
           {/* Left side: Description */}
-          <div className="space-y-6 md:flex grid items-center justify-center w-full gap-5">
+          <div className="space-y-6 grid items-center justify-center w-full gap-5">
             {/* Right side: Book excerpt */}
-            <div className="bg-white rounded-lg p-6 shadow-lg relative md:w-1/2">
-              <div className="absolute -top-3 -left-3 w-16 h-8 bg-bg-gray-dark rounded-full flex items-center justify-center text-white text-xs font-medium">
-                Excerpt
-              </div>
+            <div className="bg-white rounded-lg p-6 shadow-lg relative ">
               <blockquote className="text-lg italic text-foreground/80 mb-6">
                 {bookExcerpt.quote}
               </blockquote>
@@ -53,7 +50,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-10 md:w-1/2">
+            <div className="flex flex-col gap-10 ">
               {bookDetails.map(({ title, desc, Icon }, i) => (
                 <div key={i} className="bg-white p-4 rounded-lg shadow-sm">
                   <div className="flex items-center space-x-2 mb-2">

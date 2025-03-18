@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const NewsletterSection = () => {
   return (
-    <section id="newsletter" className="pb-20">
+    <section id="bookclub" className="pb-20">
       <div className="container mx-auto px-4 md:px-6">
         <div
           className={`max-w-3xl mx-auto text-center transition-all duration-700`}
@@ -45,13 +45,13 @@ const NewsletterSection = () => {
               <button
                 type="submit"
                 //   disabled={isSubmitting}
-                className="bg-bg-gray-dark hover:bg-bg-gray-dark/90 text-white flex items-center p-[6px] rounded-sm"
+                className="bg-bg-gray-dark text-center hover:bg-bg-gray-dark/90 text-white flex items-center justify-center p-[6px] rounded-sm"
               >
                 {/* {isSubmitting ? (
                     "Subscribing..."
                   ) : (
                     <> */}
-                Subscribe
+                Yes I&apos;m in
                 <FaArrowRight size={16} className="ml-2" />
                 {/* </>
                   )} */}

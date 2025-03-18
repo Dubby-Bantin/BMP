@@ -1,4 +1,4 @@
-import { BiAward, BiBookOpen, BiHeart } from "react-icons/bi";
+import { BiBookOpen, BiHeart } from "react-icons/bi";
 import { CgLock } from "react-icons/cg";
 const books = [
   {
@@ -68,16 +68,7 @@ const authorData = {
     "Despite an exciting six-year job at the Nigerian Broadcasting Corporation, Charlie left, casting his faith to the wind, to pursue learning and education. He acquired multiple academic credentials: Diploma in Mass Communication (University of Lagos, Nigeria) BA in Journalism/Economics (Indiana University, Bloomington, USA) MA in Economics (Indiana University, Bloomington, USA) MBA in Business Computing Science (Texas A&M University, College Station, USA)",
     "Charlie’s strategy of prioritizing education over immediate financial gain worked so well that he recommends it to young people. He believes that life’s mission should be bigger than just chasing money. Readers can explore this philosophy further in his upcoming book, Money Disorder.",
   ],
-  achievements: [
-    {
-      Icon: BiAward,
-      text: "Pulitzer Prize Winner",
-    },
-    {
-      Icon: BiBookOpen,
-      text: "Published in 24 Languages",
-    },
-  ],
+
   contactButtonText: "Contact for Events",
   contactLink: "#contact",
 };
@@ -86,48 +77,48 @@ const reviewsData = {
   tagline: "Reviews",
   title: "Critical Acclaim",
   description:
-    'See what critics and readers are saying about "The Art of Timeless Stories"',
+    'See what critics and readers are saying about "The Young man in a hurry"',
   reviews: [
     {
       id: 1,
       quote:
-        "A remarkable achievement in storytelling that will stay with readers long after they've turned the final page.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde fugit deserunt voluptatum temporibus quasi.",
       author: "The New York Times",
       rating: 5,
     },
     {
       id: 2,
       quote:
-        "Doe crafts a narrative so intricate and believable that one forgets they're reading fiction. Truly a masterpiece.",
-      author: "Literary Review",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde fugit deserunt voluptatum temporibus quasi",
+      author: "Lorem Ipsum",
       rating: 5,
     },
     {
       id: 3,
       quote:
-        "Beautifully written and emotionally resonant. A powerful exploration of creativity and human connection.",
-      author: "The Guardian",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde fugit deserunt voluptatum temporibus quasi",
+      author: "Lorem Ipsum",
       rating: 4,
     },
     {
       id: 4,
       quote:
-        "Immersive, thought-provoking, and impossible to put down. An instant classic that transcends genre.",
-      author: "Entertainment Weekly",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde fugit deserunt voluptatum temporibus quasi",
+      author: "Lorem Ipsum",
       rating: 5,
     },
     {
       id: 5,
       quote:
-        "Jane Doe's prose shimmers with clarity and beauty. This novel confirms her status as one of our most important contemporary writers.",
-      author: "The Atlantic",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde fugit deserunt voluptatum temporibus quasi",
+      author: "Lorem Ipsum",
       rating: 5,
     },
   ],
   statistics: [
-    { number: "1M+", label: "Copies Sold" },
-    { number: "42", label: "Weeks on Bestseller List" },
-    { number: "24", label: "Languages Translated" },
+    { number: "__", label: "Copies Sold" },
+    { number: "__", label: "Weeks on Bestseller List" },
+    { number: "__", label: "Languages Translated" },
   ],
 };
 

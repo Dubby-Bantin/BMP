@@ -5,15 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const AuthorSection = () => {
-  const {
-    tagline,
-    name,
-    description,
-    bio,
-    achievements,
-    contactButtonText,
-    contactLink,
-  } = authorData;
+  const { tagline, name, description, bio, contactButtonText, contactLink } =
+    authorData;
 
   return (
     <section id="author" className="py-20">
@@ -35,12 +28,6 @@ const AuthorSection = () => {
                 />
               </div>
             </div>
-
-            {/* Decorative Elements */}
-            <div className="absolute -z-10 -bottom-6 -right-6 w-80 h-80 bg-book-secondary rounded-lg"></div>
-            <div className="absolute -bottom-3 -left-3 px-6 py-3 bg-white shadow-lg rounded-lg">
-              <p className="text-sm">Author of 5 International Bestsellers</p>
-            </div>
           </div>
 
           {/* Author Info Column */}
@@ -58,18 +45,6 @@ const AuthorSection = () => {
             <p className="text-foreground/80 leading-relaxed">{bio[0]}</p>
 
             <p className="text-foreground/80 leading-relaxed">{bio[1]}</p>
-
-            <div className="flex flex-wrap gap-4 pt-4">
-              {achievements.map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-center space-x-2 bg-book-secondary/50 px-4 py-2 rounded-full"
-                >
-                  <item.Icon className="text-bg-gray-dark " size={18} />
-                  <span className="text-sm">{item.text}</span>
-                </div>
-              ))}
-            </div>
 
             <div className="pt-6">
               <Link

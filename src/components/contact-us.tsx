@@ -52,8 +52,8 @@ const ContactSection = () => {
             <div className="w-16 h-1 bg-book-accent mb-6" />
 
             <p className="text-lg text-foreground/80 mb-8 max-w-lg">
-              Have questions about the book, author appearances, or media
-              inquiries? We&apos;d love to hear from you.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, odio. Voluptates.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -63,7 +63,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-foreground/70">contact@thenovel.com</p>
+                  <p className="text-foreground/70">loremipsum@gmail.com</p>
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-medium">Literary Agent</h3>
-                  <p className="text-foreground/70">agent@literaryagency.com</p>
+                  <p className="text-foreground/70">loremipsum@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -81,9 +81,10 @@ const ContactSection = () => {
             <div className="p-6 bg-bg-gray-dark/5 rounded-lg border border-bg-gray-dark/10">
               <h3 className=" text-lg font-medium mb-3">Book Club Resources</h3>
               <p className="text-foreground/70 mb-4">
-                Interested in featuring &quot;The Art of Timeless Stories&quot;
-                in your book club? Contact us for discussion guides, virtual
-                author visits, and special book club discounts.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+                porro explicabo a doloremque consequuntur. Porro quo, tempore
+                facilis hic, veritatis consequuntur qui quam voluptates
+                assumenda sed sapiente quas cumque harum.
               </p>
               <a
                 href="#"
