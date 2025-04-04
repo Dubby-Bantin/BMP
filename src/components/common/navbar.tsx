@@ -1,19 +1,17 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { navLinks } from "@/lib/utils/constants";
 
-// Define your navigation links
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/#about" },
-  { name: "Author", href: "/#author" },
-  { name: "Reviews", href: "/#reviews" },
-  { name: "Blog", href: "/#blog" },
-  { name: "Book club", href: "/#bookclub" },
-  { name: "Contact", href: "/#contact" },
-];
+import * as React from "react";
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,23 +28,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md h-fit top-0 sticky z-[9999]">
+    <nav className="bg-[#1da0f1] shadow-md h-fit top-0 text-white sticky z-[9999] p-5">
       <div className="container mx-auto px-4 h-fit">
         <div className="flex justify-between items-center h-fit">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link
-              href="/"
-              className="text-xl font-bold text-gray-800 flex items-center"
-            >
-              <Image
+            <Link href="/" className="text-xl font-bold  flex items-center">
+              {/* <Image
                 src={"/images/logo1.jpg"}
                 className="rounded-"
                 alt="logo"
                 height={150}
                 width={150}
-              />
-              <p className="text-gray-400 text-4xl relative top-8 -left-9 font-extralight">
+              /> */}
+              <p className="text-white text-4xl relative font-extralight">
                 BMP
               </p>
             </Link>
@@ -54,23 +49,36 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            {navLinks.map((link) => (
+            {navLinks.map((link, i) => (
               <Link
-                key={link.name}
-                href={link.href}
-                className="text-gray-800 hover:text-blue-600"
+                key={i}
+                href={link.name !== "Books" ? link.href : ""}
+                className=" hover:text-blue-600"
               >
-                {link.name}
+                {link.name === "Books" ? (
+                  <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                      <Link href={"#"}>Books</Link>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="w-72 text-center">
+                      <DropdownMenuItem className="grid gap-2">
+                        <Link href={"#book1"}>
+                          1. Young Man In A Hurry: Son of Mary
+                        </Link>
+                        <Link href={"#book2"}>2. Money Disorder</Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                ) : (
+                  link.name
+                )}
               </Link>
             ))}
           </div>
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="text-gray-800 focus:outline-none"
-            >
+            <button onClick={toggleMenu} className=" focus:outline-none">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -104,7 +112,7 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="block text-gray-800 hover:text-blue-600 py-2 px-4"
+                  className="block  hover:text-blue-600 py-2 px-4"
                 >
                   {link.name}
                 </Link>

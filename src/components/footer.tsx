@@ -52,12 +52,6 @@ const Footer = () => {
                 href="#"
                 className="text-white/70 hover:text-white transition-colors"
               >
-                <FaX size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-white/70 hover:text-white transition-colors"
-              >
                 <FaInstagram size={20} />
               </a>
             </div>

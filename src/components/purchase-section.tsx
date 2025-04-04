@@ -5,32 +5,19 @@ import { BsArrowRight } from "react-icons/bs";
 
 const retailers = [
   {
-    name: "Amazon",
+    price: "$14.61",
+    link: "https://shop.ingramspark.com/b/084?ZhbfzH5mBWozMVINjEA4D8SAgiblVL5RSNYQsiqITH0",
+    features: ["Paperback"],
+  },
+  {
+    price: "$18.98",
+    link: "https://shop.ingramspark.com/b/084?WGaEm9HS5eNvKwPFaPgUOQqafnP13XMbm9kdCYJ7Fna",
+    features: ["Hardcover"],
+  },
+  {
     price: "$24.99",
     link: "#",
-    features: ["Paperback", "Hardcover", "E-Book", "Audiobook"],
-  },
-  {
-    name: "Barnes & Noble",
-    price: "$22.50",
-    link: "#",
-    features: [
-      "Paperback",
-      "Hardcover",
-      "Signed Edition",
-      "Book Club Discount",
-    ],
-  },
-  {
-    name: "Local Bookstores",
-    price: "$26.99",
-    link: "#",
-    features: [
-      "Support Local Business",
-      "In-store Events",
-      "Paperback",
-      "Hardcover",
-    ],
+    features: ["Audio"],
   },
 ];
 
@@ -42,12 +29,11 @@ const PurchaseSection = () => {
           <span className="inline-block px-3 py-1 bg-bg-gray-dark/10 text-book-accent text-xs font-medium rounded-full mb-4">
             Available Now
           </span>
-          <h2 className=" text-3xl md:text-4xl font-bold mb-4">
-            Get a Copy
-          </h2>
+          <h2 className=" text-3xl md:text-4xl font-bold mb-4">Get a Copy</h2>
           <div className="w-16 h-1 bg-bg-gray-dark mx-auto mb-6" />
           <p className="text-foreground/70">
-            Find &quot;The Art of Timeless Stories&quot; at your favorite retailers
+            Find &quot;The Art of Timeless Stories&quot; at your favorite
+            retailers
           </p>
         </div>
 
@@ -63,7 +49,7 @@ const PurchaseSection = () => {
               className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2"
             >
               <div className="p-6">
-                <h3 className=" text-xl font-bold mb-2">{retailer.name}</h3>
+                {/* <h3 className=" text-xl font-bold mb-2">{retailer.name}</h3> */}
                 <p className="text-3xl font-bold text-book-accent mb-4">
                   {retailer.price}
                 </p>
@@ -78,6 +64,7 @@ const PurchaseSection = () => {
                 </ul>
 
                 <a
+                  target="_blank"
                   href={retailer.link}
                   className="block w-full py-3 px-4 bg-bg-gray-dark text-white text-center rounded hover:bg-bg-gray-dark/90 transition-colors group"
                 >

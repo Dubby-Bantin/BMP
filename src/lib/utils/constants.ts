@@ -1,5 +1,14 @@
 import { BiBookOpen, BiHeart } from "react-icons/bi";
 import { CgLock } from "react-icons/cg";
+
+const navLinks = [
+  { name: "Home", href: "#" },
+  { name: "Author", href: "/#author" },
+  { name: "Books", href: "/#books" },
+  { name: "Book club", href: "/#bookclub" },
+  { name: "Contact", href: "/#contact" },
+];
+
 const books = [
   {
     id: 1,
@@ -122,4 +131,9 @@ const reviewsData = {
   ],
 };
 
-export { books, aboutData, authorData, reviewsData };
+const paragraphs = [
+  "Young Man In A Hurry: Son of Mary by Charlie O. Ukwu is a memoir detailing the author's journey from poverty and child labor in Nigeria to achieving success in the corporate sectors of the United States and the United Kingdom.",
+  "The narrative emphasizes the limitations of unmanaged aid, suggesting that such assistance can inadvertently foster dependency rather than alleviate poverty. Ukwu's story, initially penned at the request of his children and dedicated to his late mother, Mary, serves as an inspiration for individuals worldwide to pursue their aspirations, regardless of their starting point. The memoir underscores the importance of education and personal determination in overcoming adversity and achieving self-reliance.",
+];
+
+export { books, aboutData, authorData, reviewsData, navLinks, paragraphs };
