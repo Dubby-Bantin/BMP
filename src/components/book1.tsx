@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface StorySectionProps {
@@ -28,8 +29,9 @@ const StorySection: React.FC<StorySectionProps> = ({
           } gap-8 md:gap-12 items-center`}
         >
           {/* Image */}
-          <div className="md:w-1/2 h-fit w-full">
-            <img
+          <div className="md:w-1/2 h-fit w-full relative">
+            <Image
+              layout="fill"
               src={imageUrl}
               alt="Story Illustration"
               className="rounded-lg shadow-xl w-full object-cover"
