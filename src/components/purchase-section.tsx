@@ -50,9 +50,9 @@ const PurchaseSection = () => {
             >
               <div className="p-6">
                 {/* <h3 className=" text-xl font-bold mb-2">{retailer.name}</h3> */}
-                <p className="text-3xl font-bold text-book-accent mb-4">
+                {/* <p className="text-3xl font-bold text-book-accent mb-4">
                   {retailer.price}
-                </p>
+                </p> */}
 
                 <ul className="space-y-3 mb-6">
                   {retailer.features.map((feature, i) => (
@@ -66,7 +66,7 @@ const PurchaseSection = () => {
                 <a
                   target="_blank"
                   href={retailer.link}
-                  className="block w-full py-3 px-4 bg-bg-gray-dark text-white text-center rounded hover:bg-bg-gray-dark/90 transition-colors group"
+                  className="block w-full py-3 px-4  border-2 border-black text-center rounded group"
                 >
                   <span className="inline-flex items-center">
                     Buy Now

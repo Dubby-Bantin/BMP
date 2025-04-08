@@ -29,7 +29,7 @@ const StorySection: React.FC<StorySectionProps> = ({
           } gap-8 md:gap-12 items-center`}
         >
           {/* Image */}
-          <div className="md:w-1/2 h-[25rem] w-full relative">
+          <div className="md:w-1/2 h-[45rem] w-full relative">
             <Image
               layout="fill"
               src={imageUrl}
