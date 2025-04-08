@@ -52,8 +52,8 @@ const ContactSection = () => {
             <div className="w-16 h-1 bg-book-accent mb-6" />
 
             <p className="text-lg text-foreground/80 mb-8 max-w-lg">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, odio. Voluptates.
+              For event bookings and more enquiries, fill out the form to send
+              us an email.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -63,16 +63,6 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-foreground/70">loremipsum@gmail.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="bg-bg-gray-dark/10 p-3 rounded-full text-book-accent">
-                  <BiMessageSquare size={20} />
-                </div>
-                <div>
-                  <h3 className="font-medium">Literary Agent</h3>
                   <p className="text-foreground/70">loremipsum@gmail.com</p>
                 </div>
               </div>

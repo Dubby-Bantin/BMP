@@ -19,17 +19,17 @@ const StorySection: React.FC<StorySectionProps> = ({
       <div className="max-w-6xl mx-auto">
         {title && (
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            {title}
+            <span className="italic">{title.slice(0, 20)}</span>
+            {title.slice(20)}
           </h2>
         )}
-
         <div
           className={`flex flex-col ${
             imagePosition === "left" ? "md:flex-row" : "md:flex-row-reverse"
           } gap-8 md:gap-12 items-center`}
         >
           {/* Image */}
-          <div className="md:w-1/2 h-fit w-full relative">
+          <div className="md:w-1/2 h-[25rem] w-full relative">
             <Image
               layout="fill"
               src={imageUrl}

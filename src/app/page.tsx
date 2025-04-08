@@ -19,7 +19,7 @@ export default function Home() {
 USA)) was born the son of a coal miner at Iva Valley, near Enugu, Nigeria.
 Despite a 6-year exciting job at Nigerian Broadcasting Corporation, Charlie I cast his faith to the wind, to pursue learning and education to acquire t credentials detailed above. This strategy worked so well that he recommends th method for all young people rather than chasing after money as their goal in lit Everyone's life mission ought to be bigger than money. Readers will learn mot about this matter in an upcoming book, Money Disorder.
 "
-        imageUrl="/images/Uncle C pic.jpeg"
+        imageUrl="/images/author.jpg"
       />
       <div className="md:px-20 py-20">
         {/* <AboutSection /> */}
@@ -28,10 +28,10 @@ Despite a 6-year exciting job at Nigerian Broadcasting Corporation, Charlie I ca
           <ReviewsSection />
         </div>
         <StorySection
-          title={`"Young Man In A Hurry" : Son of Mary by Charlie O. Ukwu`}
+          title={`Young Man In A Hurry : Son of Mary by Charlie O. Ukwu`}
           paragraphs={paragraphs}
-          imageUrl="/images/book_cover.png" // Replace with actual image path
-          imagePosition="right" // or "left"
+          imageUrl="/images/book_cover.png"
+          imagePosition="right"
         />
         <PurchaseSection />
         <NewsletterSection />

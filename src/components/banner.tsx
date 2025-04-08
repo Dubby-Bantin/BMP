@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 interface AuthorBannerProps {
   name: string;
@@ -8,9 +9,9 @@ interface AuthorBannerProps {
 
 const AuthorBanner: React.FC<AuthorBannerProps> = ({ name, bio, imageUrl }) => {
   return (
-    <div className=" rounded-xl overflow-hidden flex items-center justify-center w-full">
-      <div className="md:flex items-center justify-between w-full gap-30">
-        <div className="md:w-1/2 text-center pl-56">
+    <div className="relative rounded-xl overflow-hidden flex items-center justify-center w-full">
+      <div className="md:flex items-center justify-between w-full gap-55">
+        <div className="md:w-1/2 text-center pl-50">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             {name}
           </h1>
@@ -26,6 +27,16 @@ const AuthorBanner: React.FC<AuthorBannerProps> = ({ name, bio, imageUrl }) => {
             className="w-full object-cover shadow-md"
           />
         </div>
+      </div>
+      <div className="shadow-md absolute rounded-md h-[18rem] w-[18rem] bg-white right-[34rem] top-32 flex flex-col items-center justify-between p-5">
+        <h1 className="text-[#1da0f1] font-bold text-2xl">
+          Be the first to know!{" "}
+        </h1>
+        <p className="">
+          Get notified when <span className="italic font-bold">MONEY DISORDER</span> and other book updates
+          are live. Join the waitlist{" "}
+        </p>
+        <Button variant={"outline"}>Join the waitlist!</Button>
       </div>
     </div>
   );

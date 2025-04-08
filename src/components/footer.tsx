@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-bg-gray-light text-white py-12 mt-16">
+    <footer className="bg-bg-gray-light text-white py-12 mt-16 px-5">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -15,9 +15,9 @@ const Footer = () => {
             </p>
           </div>
 
-          <div>
+          <div className="">
             <h4 className=" text-lg mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 grid grid-cols-2">
               {[
                 "Home",
                 "About",
@@ -64,13 +64,10 @@ const Footer = () => {
                 contact@thenovel.com
               </a>
             </p>
-            <p className="text-sm text-white/70 mt-2">
-              Publisher: Acme Publishing House
-            </p>
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/10 text-sm text-white/50 flex flex-col md:flex-row justify-between items-center">
+        <div className="mt-5 pt-2 border-t border-white/10 text-sm text-white/50 flex flex-col md:flex-row justify-between items-center">
           <p>© {new Date().getFullYear()} The Novel. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">
