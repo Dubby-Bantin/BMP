@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { montserrat, poppins } from "@/lib/utils/fonts";
+import { poppins } from "@/lib/utils/fonts";
 import Navbar from "@/components/common/navbar";
 
 export const metadata: Metadata = {
