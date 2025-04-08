@@ -67,22 +67,6 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
-
-            <div className="p-6 bg-bg-gray-dark/5 rounded-lg border border-bg-gray-dark/10">
-              <h3 className=" text-lg font-medium mb-3">Book Club Resources</h3>
-              <p className="text-foreground/70 mb-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-                porro explicabo a doloremque consequuntur. Porro quo, tempore
-                facilis hic, veritatis consequuntur qui quam voluptates
-                assumenda sed sapiente quas cumque harum.
-              </p>
-              <a
-                href="#"
-                className="text-book-accent font-medium hover:underline"
-              >
-                Download Book Club Guide
-              </a>
-            </div>
           </div>
 
           {/* Form Column */}

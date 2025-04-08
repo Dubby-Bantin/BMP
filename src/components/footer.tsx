@@ -1,38 +1,23 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
+import { navLinks } from "@/lib/utils/constants";
 
 const Footer = () => {
   return (
     <footer className="bg-bg-gray-light text-white py-12 mt-16 px-5">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className=" text-xl mb-4">The Novel</h3>
-            <p className="text-sm text-white/70 max-w-xs">
-              A compelling story of adventure, discovery, and human connection
-              in a world of endless possibilities.
-            </p>
-          </div>
-
+        <div className="flex  justify-between gap-8">
           <div className="">
             <h4 className=" text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2 grid grid-cols-2">
-              {[
-                "Home",
-                "About",
-                "Author",
-                "Reviews",
-                "Blog",
-                "Book club",
-                "Contact",
-              ].map((item) => (
-                <li key={item}>
+              {navLinks.map(({ href, name }) => (
+                <li key={href}>
                   <a
-                    href={`/#${item.toLowerCase()}`}
+                    href={href}
                     className="text-sm text-white/70 hover:text-book-accent transition-colors duration-200"
                   >
-                    {item}
+                    {name}
                   </a>
                 </li>
               ))}
