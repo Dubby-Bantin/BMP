@@ -24,15 +24,15 @@ Despite a 6-year exciting job at Nigerian Broadcasting Corporation, Charlie I ca
       <div className="md:px-20 py-20">
         {/* <AboutSection /> */}
         <AuthorSection />
-        <div className="flex items-center justify-center w-full">
-          <ReviewsSection />
-        </div>
         <StorySection
           title={`Young Man In A Hurry : Son of Mary by Charlie O. Ukwu`}
           paragraphs={paragraphs}
           imageUrl="/images/book_cover.png"
           imagePosition="right"
         />
+        <div className="flex items-center justify-center w-full">
+          <ReviewsSection />
+        </div>
         <PurchaseSection />
         <NewsletterSection />
         {/* <BookShowcase /> */}

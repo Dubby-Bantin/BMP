@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { montserrat } from "@/lib/utils/fonts";
+import { montserrat, poppins } from "@/lib/utils/fonts";
 import Navbar from "@/components/common/navbar";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${poppins.className} antialiased`}>
         <Navbar />
         {children}
       </body>
