@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,16 +35,12 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold  flex items-center">
-              {/* <Image
-                src={"/images/logo1.jpg"}
-                className="rounded-"
+              <Image
+                height={100}
+                width={100}
+                src={"/images/logo.png"}
                 alt="logo"
-                height={150}
-                width={150}
-              /> */}
-              <p className="text-white text-4xl relative font-extralight">
-                BMP
-              </p>
+              />
             </Link>
           </div>
 
