@@ -29,15 +29,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#1da0f1] shadow-md h-fit top-0 text-white sticky z-[9999] p-5">
+    <nav className="bg-[#1da0f1] shadow-md h-fit top-0 text-white sticky z-[9999]">
       <div className="container mx-auto px-4 h-fit">
         <div className="flex justify-between items-center h-fit">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold  flex items-center">
+            <Link href="/" className="text-xl">
               <Image
-                height={100}
-                width={100}
+                height={110}
+                width={110}
                 src={"/images/logo.png"}
                 alt="logo"
               />
