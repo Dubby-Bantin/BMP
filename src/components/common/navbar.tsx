@@ -57,12 +57,12 @@ const Navbar = () => {
                     <DropdownMenuTrigger asChild>
                       <Link href={"#"}>Books</Link>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className="w-72 text-center">
+                    <DropdownMenuContent className="w-72">
                       <DropdownMenuItem className="grid gap-2">
                         <Link href={"#book1"}>
-                          1. Young Man In A Hurry: Son of Mary
+                          Young Man In A Hurry: Son of Mary
                         </Link>
-                        <Link href={"#book2"}>2. Money Disorder</Link>
+                        <Link href={"#book2"}>Money Disorder</Link>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
