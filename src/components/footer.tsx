@@ -53,7 +53,9 @@ const Footer = () => {
         </div>
 
         <div className="mt-5 pt-2 border-t border-white/10 text-sm text-white/50 flex flex-col md:flex-row justify-between items-center">
-          <p>© {new Date().getFullYear()} The Novel. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Charlie O Ukwu. All rights reserved.
+          </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">
               Privacy Policy

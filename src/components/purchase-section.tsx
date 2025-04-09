@@ -17,7 +17,7 @@ const retailers = [
   {
     price: "$24.99",
     link: "#",
-    features: ["Audio"],
+    features: ["Audible"],
   },
 ];
 
