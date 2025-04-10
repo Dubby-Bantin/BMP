@@ -11,8 +11,8 @@ interface AuthorBannerProps {
 const AuthorBanner: React.FC<AuthorBannerProps> = ({ name, bio, imageUrl }) => {
   return (
     <div className="relative rounded-xl overflow-hidden flex items-center justify-center w-full">
-      <div className="md:flex items-center justify-between w-full gap-55">
-        <div className="md:w-1/2 text-center pl-20">
+      <div className="md:flex items-center justify-between w-full gap-55 md:px-0 px-5">
+        <div className="md:w-1/2 text-center md:pl-20">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-2">
             {name}
           </h1>
@@ -20,7 +20,7 @@ const AuthorBanner: React.FC<AuthorBannerProps> = ({ name, bio, imageUrl }) => {
           <p className="text-gray-700 mb-4 md:text-xl">{bio}</p>
         </div>
 
-        <div className="md:w-[750px] relative h-[750px]">
+        <div className="md:w-[750px] relative md:h-[750px] h-[500px]">
           <Image
             layout="fill"
             src={imageUrl}

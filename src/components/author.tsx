@@ -9,7 +9,7 @@ const AuthorSection = () => {
     authorData;
 
   return (
-    <section id="author" className="py-20">
+    <section id="author" className="py-20 px-3 md:px-0">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0 }}
