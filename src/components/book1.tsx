@@ -2,14 +2,12 @@ import Image from "next/image";
 import React from "react";
 
 interface StorySectionProps {
-  title?: string;
   paragraphs: string[];
   imageUrl: string;
   imagePosition?: "left" | "right"; // Choose image alignment
 }
 
 const StorySection: React.FC<StorySectionProps> = ({
-  title,
   paragraphs,
   imageUrl,
   imagePosition = "left",
@@ -17,12 +15,10 @@ const StorySection: React.FC<StorySectionProps> = ({
   return (
     <section id="book1" className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
-        {title && (
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            <span className="italic">{title.slice(0, 20)}</span>
-            {title.slice(20)}
-          </h2>
-        )}
+        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          YOUNG MAN <span className="italic">IN A HURRY </span>: Son of Mary by
+          Charlie O. Ukwu
+        </h2>
         <div
           className={`flex flex-col ${
             imagePosition === "left" ? "md:flex-row" : "md:flex-row-reverse"
