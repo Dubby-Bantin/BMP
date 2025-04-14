@@ -33,7 +33,7 @@ const AuthorBanner: React.FC<AuthorBannerProps> = ({ name, imageUrl }) => {
             worked so well that he recommends this method for all young people
             rather than chasing after money as their goal in life.
             Everyone&apos;s life mission ought to be bigger than money. Readers
-            will learn mot about this matter in an upcoming book, Money
+            will learn more about this matter in an upcoming book, Money
             Disorder.
           </p>
         </div>
