@@ -8,21 +8,17 @@ import Footer from "@/components/footer";
 import NewsletterSection from "@/components/newsletter";
 import PurchaseSection from "@/components/purchase-section";
 import ReviewsSection from "@/components/reviews";
+import Video from "@/components/video";
 import { paragraphs } from "@/lib/utils/constants";
 
 export default function Home() {
   return (
     <div>
-      <AuthorBanner
-        name="Charlie O Ukwu"
-       
-        imageUrl="/images/author.jpg"
-      />
+      <AuthorBanner name="Charlie O Ukwu" imageUrl="/images/author.jpg" />
       <div className="md:px-20 py-20">
         {/* <AboutSection /> */}
         <AuthorSection />
         <StorySection
-         
           paragraphs={paragraphs}
           imageUrl="/images/book_cover.png"
           imagePosition="right"
@@ -31,6 +27,7 @@ export default function Home() {
           <ReviewsSection />
         </div>
         <PurchaseSection />
+        <Video />
         <NewsletterSection />
         {/* <BookShowcase /> */}
         <ContactSection />

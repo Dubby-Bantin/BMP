@@ -13,6 +13,17 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 import Image from "next/image";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
+import { Button } from "../ui/button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,19 +64,64 @@ const Navbar = () => {
                 className=" hover:text-blue-600"
               >
                 {link.name === "Books" ? (
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <Link href={"#"}>Books</Link>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent className="w-72">
-                      <DropdownMenuItem className="grid gap-2">
-                        <Link href={"#book1"}>
-                          Young Man In A Hurry: Son of Mary
-                        </Link>
-                        <Link href={"#book2"}>Money Disorder</Link>
-                      </DropdownMenuItem>
-                    </DropdownMenuContent>
-                  </DropdownMenu>
+                  <Dialog>
+                    <DropdownMenu>
+                      <DropdownMenuTrigger asChild>
+                        <span>Books</span>
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent className="w-72">
+                        <DropdownMenuItem className="grid gap-2">
+                          <Link href={"#book1"}>
+                            Young Man In A Hurry: Son of Mary
+                          </Link>
+                        </DropdownMenuItem>
+                        <DialogTrigger asChild>
+                          <DropdownMenuItem className="grid gap-2">
+                            <Button variant={"link"}>Money Disorder</Button>
+                          </DropdownMenuItem>
+                        </DialogTrigger>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+
+                    <DialogContent>
+                      <DialogHeader>
+                        <DialogTitle>Money is not the answer.</DialogTitle>
+                        <DialogDescription>
+                          <p className=" mb-5">
+                            {" "}
+                            Too often, we mistake money for a solution when it
+                            is merely a tool—powerful, yes, but dangerous when
+                            placed in unprepared hands. As you’ll discover in
+                            this book, the true determinant of success is not
+                            how much money you have, but how ready you are to
+                            wield it. Readiness is not a number in a bank
+                            account—it’s a mindset, a maturity, a quiet strength
+                            I call JNSQ. Without it, even great wealth can
+                            collapse under poor judgment. With it, even modest
+                            means can build a life of purpose, impact, and
+                            freedom. This book is not about chasing more money.
+                            It is about becoming the kind of person money cannot
+                            corrupt, and life cannot break.
+                          </p>
+                          <div className="relative h-[15rem] w-full">
+                            <Image
+                              src="/images/book.avif"
+                              alt="alt"
+                              // width={500}
+                              // height={500}
+                              layout="fill"
+                              objectFit="cover"
+                            />
+                          </div>
+                        </DialogDescription>
+                      </DialogHeader>
+                      <DialogFooter>
+                        <DialogClose asChild>
+                          <Button type="submit">Close</Button>
+                        </DialogClose>
+                      </DialogFooter>
+                    </DialogContent>
+                  </Dialog>
                 ) : (
                   link.name
                 )}
@@ -73,7 +129,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button onClick={toggleMenu} className=" focus:outline-none">
               <svg
@@ -109,7 +164,7 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="block  hover:text-blue-600 py-2 px-4"
+                  className="block text-black hover:text-blue-600 py-2 px-4"
                 >
                   {link.name}
                 </Link>
