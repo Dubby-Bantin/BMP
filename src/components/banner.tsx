@@ -47,7 +47,7 @@ const AuthorBanner: React.FC<AuthorBannerProps> = ({ name, imageUrl }) => {
           />
         </div>
       </div>
-      <div className="shadow-md absolute rounded-md h-[15rem] w-[15rem] bg-white lg:right-[30rem] top gap-2 flex flex-col items-center justify-between p-5">
+      <div className="md:flex hidden shadow-md absolute rounded-md h-[15rem] w-[15rem] bg-white lg:right-[30rem] gap-2  flex-col items-center justify-between p-5">
         <h1 className="text-[#1da0f1] font-bold text-2xl">
           Be the first to know!{" "}
         </h1>

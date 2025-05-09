@@ -107,8 +107,6 @@ const Navbar = () => {
                             <Image
                               src="/images/book.avif"
                               alt="alt"
-                              // width={500}
-                              // height={500}
                               layout="fill"
                               objectFit="cover"
                             />
@@ -160,13 +158,73 @@ const Navbar = () => {
               variants={mobileMenuVariants}
               transition={{ duration: 0.3 }}
             >
-              {navLinks.map((link) => (
+              {navLinks.map((link,i) => (
                 <Link
-                  key={link.name}
-                  href={link.href}
-                  className="block text-black hover:text-blue-600 py-2 px-4"
+                  key={i}
+                  href={link.name !== "Books" ? link.href : ""}
+                  className=" hover:text-blue-600 block text-black py-4 px-2"
                 >
-                  {link.name}
+                  {link.name === "Books" ? (
+                    <Dialog>
+                      <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                          <span>Books</span>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-72">
+                          <DropdownMenuItem className="grid gap-2">
+                            <Link href={"#book1"}>
+                              Young Man In A Hurry: Son of Mary
+                            </Link>
+                          </DropdownMenuItem>
+                          <DialogTrigger asChild>
+                            <DropdownMenuItem className="grid gap-2">
+                              <Button variant={"link"}>Money Disorder</Button>
+                            </DropdownMenuItem>
+                          </DialogTrigger>
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>Money is not the answer.</DialogTitle>
+                          <DialogDescription>
+                            <p className=" mb-5">
+                              {" "}
+                              Too often, we mistake money for a solution when it
+                              is merely a tool—powerful, yes, but dangerous when
+                              placed in unprepared hands. As you’ll discover in
+                              this book, the true determinant of success is not
+                              how much money you have, but how ready you are to
+                              wield it. Readiness is not a number in a bank
+                              account—it’s a mindset, a maturity, a quiet
+                              strength I call JNSQ. Without it, even great
+                              wealth can collapse under poor judgment. With it,
+                              even modest means can build a life of purpose,
+                              impact, and freedom. This book is not about
+                              chasing more money. It is about becoming the kind
+                              of person money cannot corrupt, and life cannot
+                              break.
+                            </p>
+                            <div className="relative h-[15rem] w-full">
+                              <Image
+                                src="/images/book.avif"
+                                alt="alt"
+                                layout="fill"
+                                objectFit="cover"
+                              />
+                            </div>
+                          </DialogDescription>
+                        </DialogHeader>
+                        <DialogFooter>
+                          <DialogClose asChild>
+                            <Button type="submit">Close</Button>
+                          </DialogClose>
+                        </DialogFooter>
+                      </DialogContent>
+                    </Dialog>
+                  ) : (
+                    link.name
+                  )}
                 </Link>
               ))}
             </motion.div>
