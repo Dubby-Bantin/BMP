@@ -207,7 +207,7 @@ const Navbar = () => {
                             </p>
                             <div className="relative h-[15rem] w-full">
                               <Image
-                                src="/images/book.avif"
+                                src="/images/new_book.jpg"
                                 alt="alt"
                                 layout="fill"
                                 objectFit="cover"
