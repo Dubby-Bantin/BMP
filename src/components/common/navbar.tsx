@@ -103,12 +103,13 @@ const Navbar = () => {
                             It is about becoming the kind of person money cannot
                             corrupt, and life cannot break.
                           </p>
-                          <div className="relative h-[15rem] w-full">
+                          <div className="relative h-[25rem] w-full">
                             <Image
-                              src="/images/book.avif"
+                              src="/images/new_book.jpg"
                               alt="alt"
                               layout="fill"
-                              objectFit="cover"
+                              objectFit="contain"
+                              className="w-[20rem]"
                             />
                           </div>
                         </DialogDescription>
@@ -158,7 +159,7 @@ const Navbar = () => {
               variants={mobileMenuVariants}
               transition={{ duration: 0.3 }}
             >
-              {navLinks.map((link,i) => (
+              {navLinks.map((link, i) => (
                 <Link
                   key={i}
                   href={link.name !== "Books" ? link.href : ""}
