@@ -67,7 +67,9 @@ const Book2 = () => {
         </DialogHeader>
         <DialogFooter>
           <DialogClose asChild>
-            <Button type="submit">Close</Button>
+            <Button asChild type="submit">
+              <Link href="/#contact">Join the waitlist</Link>
+            </Button>
           </DialogClose>
         </DialogFooter>
       </DialogContent>
