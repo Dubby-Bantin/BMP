@@ -53,13 +53,15 @@ const Book2 = () => {
               is not about chasing more money. It is about becoming the kind of
               person money cannot corrupt, and life cannot break.
             </p>
-            <div className="relative h-[15rem] w-full">
-              <Image
-                src="/images/new_book.jpg"
-                alt="alt"
-                layout="fill"
-                objectFit="cover"
-              />
+            <div className="relative h-[15rem] overflow-y-scroll">
+              <div className="absolute top-0 left-0 w-full h-[25rem]">
+                <Image
+                  src="/images/new_book.jpg"
+                  alt="alt"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </DialogDescription>
         </DialogHeader>
