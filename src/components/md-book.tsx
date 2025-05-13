@@ -54,7 +54,7 @@ const Book2 = () => {
               person money cannot corrupt, and life cannot break.
             </p>
             <div className="relative h-[15rem] overflow-y-scroll">
-              <div className="absolute top-0 left-0 w-full h-[40rem]">
+              <div className="absolute top-0 left-0 w-full md:h-[38rem] h-[30rem]">
                 <Image
                   src="/images/new_book.jpg"
                   alt="alt"
