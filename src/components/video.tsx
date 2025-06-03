@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Video = () => {
   return (
     <div className="w-full aspect-video">
+      <p className="md:text-4xl font-bold mb-4 text-center"> About the authors</p>
       <iframe
         className="w-full h-full"
         src="https://www.youtube.com/embed/e6qHYZhnMlc"
@@ -13,6 +14,6 @@ const Video = () => {
       ></iframe>
     </div>
   );
-}
+};
 
-export default Video
+export default Video;
