@@ -18,6 +18,7 @@ export default function Home() {
       <div className="md:px-20 py-20">
         {/* <AboutSection /> */}
         <AuthorSection />
+        <Video />
         <StorySection
           paragraphs={paragraphs}
           imageUrl="/images/book_cover.png"
@@ -27,7 +28,6 @@ export default function Home() {
           <ReviewsSection />
         </div>
         <PurchaseSection />
-        <Video />
         <NewsletterSection />
         {/* <BookShowcase /> */}
         <ContactSection />
