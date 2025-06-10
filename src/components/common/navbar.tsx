@@ -1,14 +1,35 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  Dialog,
+  // DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogClose,
+} from "@/components/ui/dialog";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks } from "@/lib/utils/constants";
 import Book2 from "../md-book";
+import // Popover,
+// PopoverTrigger,
+// PopoverContent,
+"@/components/ui/popover";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
+import Video from "../video";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const mobileMenuVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -28,9 +49,58 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-6 items-center">
             {navLinks.map((link, i) =>
               link.name === "Books" ? (
-                <Book2 key={i} />
+                <div key={i} className="py-2 px-4">
+                  <Book2 />
+                </div>
+              ) : link.name === "Author" ? (
+                <div key={i} className="relative py-2 px-4">
+                  <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                      <button className="block py-3 px-4 hover:text-blue-600">
+                        {link.name}
+                      </button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="p-4 w-48 bg-white shadow rounded">
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href="#author"
+                          className="block hover:text-blue-600"
+                        >
+                          About the Author
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <button
+                          onClick={() => setIsDialogOpen(true)}
+                          className="block w-full text-left hover:text-blue-600"
+                        >
+                          Projects
+                        </button>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                  <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                    <DialogContent className="p-6">
+                      <DialogHeader>
+                        <DialogTitle>About the authors</DialogTitle>
+                        <DialogDescription>
+                          <Video />
+                        </DialogDescription>
+                      </DialogHeader>
+                      <DialogClose asChild>
+                        <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded">
+                          Close
+                        </button>
+                      </DialogClose>
+                    </DialogContent>
+                  </Dialog>
+                </div>
               ) : (
-                <Link key={i} href={link.href} className="hover:text-blue-300">
+                <Link
+                  key={i}
+                  href={link.href}
+                  className="block py-3 px-4 hover:text-blue-600"
+                >
                   {link.name}
                 </Link>
               )
@@ -76,6 +146,34 @@ const Navbar = () => {
                 link.name === "Books" ? (
                   <div key={i} className="py-2 px-4">
                     <Book2 />
+                  </div>
+                ) : link.name === "Author" ? (
+                  <div key={i} className="relative py-2 px-4">
+                    <DropdownMenu>
+                      <DropdownMenuTrigger asChild>
+                        <button className="block py-3 px-4 hover:text-blue-600">
+                          {link.name}
+                        </button>
+                      </DropdownMenuTrigger>
+                    </DropdownMenu>
+                    <DropdownMenuContent className="p-4 w-48 bg-white shadow rounded">
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href="/about-author"
+                          className="block hover:text-blue-600"
+                        >
+                          About the Author
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href="/projects"
+                          className="block hover:text-blue-600"
+                        >
+                          Projects
+                        </Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
                   </div>
                 ) : (
                   <Link

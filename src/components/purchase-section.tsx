@@ -29,13 +29,10 @@ const PurchaseSection = () => {
           <span className="inline-block px-3 py-1 bg-bg-gray-dark/10 text-book-accent text-xs font-medium rounded-full mb-4">
             Available Now
           </span>
-          <h2 className=" text-3xl md:text-4xl font-bold mb-4">
-            Purchase a copy of the Author’s Published books here
-          </h2>
+          <h2 className=" text-3xl md:text-4xl font-bold mb-4">Get a Copy</h2>
           <div className="w-16 h-1 bg-bg-gray-dark mx-auto mb-6" />
           <p className="text-foreground/70">
-            Find &quot;The Art of Timeless Stories&quot; at your favorite
-            retailers
+            Purchase a copy of the Author’s Published books here
           </p>
         </div>
 

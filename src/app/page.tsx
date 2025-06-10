@@ -8,7 +8,7 @@ import Footer from "@/components/footer";
 import NewsletterSection from "@/components/newsletter";
 import PurchaseSection from "@/components/purchase-section";
 import ReviewsSection from "@/components/reviews";
-import Video from "@/components/video";
+
 import { paragraphs } from "@/lib/utils/constants";
 
 export default function Home() {
@@ -18,7 +18,6 @@ export default function Home() {
       <div className="md:px-20 py-20">
         {/* <AboutSection /> */}
         <AuthorSection />
-        <Video />
         <StorySection
           paragraphs={paragraphs}
           imageUrl="/images/book_cover.png"
