@@ -5,9 +5,10 @@ import StorySection from "@/components/book1";
 // import BookShowcase from "@/components/book-showcase";
 import ContactSection from "@/components/contact-us";
 import Footer from "@/components/footer";
-import NewsletterSection from "@/components/newsletter";
+// import NewsletterSection from "@/components/newsletter";
 import PurchaseSection from "@/components/purchase-section";
 import ReviewsSection from "@/components/reviews";
+
 
 import { paragraphs } from "@/lib/utils/constants";
 
@@ -27,7 +28,7 @@ export default function Home() {
           <ReviewsSection />
         </div>
         <PurchaseSection />
-        <NewsletterSection />
+        {/* <NewsletterSection /> */}
         {/* <BookShowcase /> */}
         <ContactSection />
       </div>

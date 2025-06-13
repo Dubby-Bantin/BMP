@@ -7,7 +7,6 @@ const navLinks = [
   { name: "Books", href: "/#books" },
   { name: "Book club", href: "/#bookclub" },
   { name: "Contact", href: "/#contact" },
-  { name: "Projects", href: "/#projects" },
 ];
 
 const books = [
