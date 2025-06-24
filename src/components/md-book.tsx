@@ -29,8 +29,13 @@ const Book2 = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-72">
           <DropdownMenuItem className="grid gap-2">
-            <Link href={"#book1"}>Young Man In A Hurry: Son of Mary</Link>
+            <Link href={"/books"}>Young Man In A Hurry: Son of Mary</Link>
           </DropdownMenuItem>
+
+          <DropdownMenuItem className="grid gap-2">
+            <Link href={"/money-disorder"}>Money Disorder</Link>
+          </DropdownMenuItem>
+
           <DialogTrigger asChild>
             <DropdownMenuItem className="grid gap-2">
               <Button variant={"link"}>Money Disorder</Button>
@@ -56,14 +61,14 @@ const Book2 = () => {
                 <>
                   <p className="mb-2">
                     A common misconception is to look for and use money as a
-                    universal solution to life&apos;s problems. Fundamentally, it is
-                    only a tool of exchange. At best, money enables solutions,
-                    only after you have done research, analysis, and concluded
-                    courses of action. At worst, money masks underlying issues
-                    or problems that eventually grow to become too large to
-                    ignore. Without knowledge, wisdom, maturity, the right
-                    mindset, and the right actions, money does not solve
-                    problems—it exposes them. An example crystallizes the
+                    universal solution to life&apos;s problems. Fundamentally,
+                    it is only a tool of exchange. At best, money enables
+                    solutions, only after you have done research, analysis, and
+                    concluded courses of action. At worst, money masks
+                    underlying issues or problems that eventually grow to become
+                    too large to ignore. Without knowledge, wisdom, maturity,
+                    the right mindset, and the right actions, money does not
+                    solve problems—it exposes them. An example crystallizes the
                     preceding explanation.
                   </p>
 
@@ -74,30 +79,31 @@ const Book2 = () => {
                     did not fully understand. Yet within three years, the money
                     was gone. The stress of sudden wealth without preparation,
                     damaged his relationships and left him worse off than
-                    before. Emeka&apos;s real problem was never a lack of money; it
-                    was a lack of readiness. The money did not heal him—it
+                    before. Emeka&apos;s real problem was never a lack of money;
+                    it was a lack of readiness. The money did not heal him—it
                     revealed the hidden unresolved issues in his character,
                     judgment, and vision.
                   </p>
 
                   <p className="mb-2">
-                    Emeka&apos;s predicament defines what I call money disorder: the
-                    mishandling of money due to an underlying lack of readiness.
-                    When money arrives out of order—before a person is prepared
-                    for it—the consequences can be devastating, whether that
-                    person is struggling to survive or sitting on mountains of
-                    wealth.
+                    Emeka&apos;s predicament defines what I call money disorder:
+                    the mishandling of money due to an underlying lack of
+                    readiness. When money arrives out of order—before a person
+                    is prepared for it—the consequences can be devastating,
+                    whether that person is struggling to survive or sitting on
+                    mountains of wealth.
                   </p>
 
                   <p className="mb-2">
                     The concept of readiness is at the heart of this book. It is
                     a unique, personal quality—difficult to define precisely
                     because it varies from one person to another. I use the term
-                    JNSQ (Je ne sais quoi, or &quot;I don&apos;t know what&quot;) to describe
-                    it. JNSQ is that essential &quot;something&quot; that makes an
-                    individual capable of handling resources wisely. It is that
-                    foundation that must be in place to support true success,
-                    impact, and fulfillment.
+                    JNSQ (Je ne sais quoi, or &quot;I don&apos;t know
+                    what&quot;) to describe it. JNSQ is that essential
+                    &quot;something&quot; that makes an individual capable of
+                    handling resources wisely. It is that foundation that must
+                    be in place to support true success, impact, and
+                    fulfillment.
                   </p>
 
                   <p className="mb-2">
@@ -115,17 +121,18 @@ const Book2 = () => {
                   <ul className="mb-2 list-disc pl-5">
                     <li className="mb-1">
                       Type I Money Disorder occurs when individuals seek to use
-                      other people&apos;s money to satisfy their needs but remain
-                      open to alternatives if persuaded. They recognize, even if
-                      reluctantly, that money may not be the only solution.
+                      other people&apos;s money to satisfy their needs but
+                      remain open to alternatives if persuaded. They recognize,
+                      even if reluctantly, that money may not be the only
+                      solution.
                     </li>
                     <li className="mb-1">
                       Type II Money Disorder also involves dependence on other
-                      people&apos;s money, but with a rigid mindset. Those afflicted
-                      by Type II refuse to consider any other solutions. Money
-                      becomes their non-negotiable solution to every problem,
-                      closing the door to creativity, growth, or true
-                      empowerment.
+                      people&apos;s money, but with a rigid mindset. Those
+                      afflicted by Type II refuse to consider any other
+                      solutions. Money becomes their non-negotiable solution to
+                      every problem, closing the door to creativity, growth, or
+                      true empowerment.
                     </li>
                   </ul>
 
@@ -149,8 +156,8 @@ const Book2 = () => {
 
                   <p className="mb-2">
                     The purpose of Money Disorder is not simply to critique our
-                    culture&apos;s obsession with wealth. It is to offer a pathway
-                    out—to challenge readers to focus first on building
+                    culture&apos;s obsession with wealth. It is to offer a
+                    pathway out—to challenge readers to focus first on building
                     readiness. Whether you find yourself hoping for your first
                     breakthrough or managing an abundance of resources, the call
                     is the same: develop your character, sharpen your wisdom,
@@ -184,8 +191,8 @@ const Book2 = () => {
               ) : (
                 <p className="mb-2">
                   A common misconception is to look for and use money as a
-                  universal solution to life&apos;s problems. Fundamentally, it is
-                  only a tool of exchange. At best, money enables solutions,
+                  universal solution to life&apos;s problems. Fundamentally, it
+                  is only a tool of exchange. At best, money enables solutions,
                   only after you have done research, analysis, and concluded
                   courses of action. At worst, money masks underlying issues or
                   problems that eventually grow to become too large to ignore.
@@ -207,7 +214,7 @@ const Book2 = () => {
         <DialogFooter>
           <DialogClose asChild>
             <Button asChild type="submit">
-              <Link href="/#contact">Join the waitlist</Link>
+              <Link href="/contact">Join the waitlist</Link>
             </Button>
           </DialogClose>
         </DialogFooter>
