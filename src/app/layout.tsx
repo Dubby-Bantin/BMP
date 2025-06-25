@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { poppins } from "@/lib/utils/fonts";
 import Navbar from "@/components/common/navbar";
+// import { Navigation } from "@/components/common/navigation";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
         <Navbar />
+        {/* <Navigation /> */}
         {children}
       </body>
     </html>

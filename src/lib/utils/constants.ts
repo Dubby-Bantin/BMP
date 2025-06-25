@@ -3,10 +3,10 @@ import { CgLock } from "react-icons/cg";
 
 const navLinks = [
   { name: "Home", href: "#" },
-  { name: "Author", href: "/#author" },
-  { name: "Books", href: "/#books" },
+  { name: "Author", href: "/author#author" },
+  { name: "Books", href: "/books#books" },
   { name: "Book club", href: "/#bookclub" },
-  { name: "Contact", href: "/#contact" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const books = [
