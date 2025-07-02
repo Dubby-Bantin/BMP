@@ -6,16 +6,17 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "../ui/dropdown-menu";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-  DialogTitle,
-  DialogClose,
-  DialogHeader,
-  DialogDescription,
-} from "../ui/dialog";
-import Video from "../video";
+// import {
+//   Dialog,
+//   DialogContent,
+//   DialogTrigger,
+//   DialogTitle,
+//   DialogClose,
+//   DialogHeader,
+//   DialogDescription,
+// } from "../ui/dialog";
+// import Video from "../video";
+import { MobileNav } from "./mobile-nav";
 
 export function Navigation() {
   return (
@@ -32,7 +33,7 @@ export function Navigation() {
             />
           </Link>
 
-          <div className="hidden md:flex space-x-4 lg:space-x-6 items-center">
+          <div className="hidden md:flex space-x-4 lg:space-x-12 items-center">
             <Link href={"/"}>Home</Link>
             <DropdownMenu>
               <DropdownMenuTrigger>Author</DropdownMenuTrigger>
@@ -41,7 +42,8 @@ export function Navigation() {
                   <Link href={"/author"}>About the author</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Dialog>
+                  <Link href={"/projects"}>Projects</Link>
+                  {/* <Dialog>
                     <DialogTrigger>Projects</DialogTrigger>
                     <DialogContent className="p-4 sm:p-6 max-w-[90vw] sm:max-w-md md:max-w-lg">
                       <DialogHeader>
@@ -56,16 +58,28 @@ export function Navigation() {
                         </button>
                       </DialogClose>
                     </DialogContent>
-                  </Dialog>
+                  </Dialog> */}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <Link href={"/"}>Book Club</Link>
-            <Link href={"/"}>Contact</Link>
-          </div>
-        </div>
 
-        {/* Mobile sheet */}
+            <DropdownMenu>
+              <DropdownMenuTrigger>Books</DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link href={"/books"}>Young man in a hurry: Son of Mary</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href={"/money-disorder"}>Money Disorder</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            {/* <Link href={"/"}>Book Club</Link> */}
+            <Link href={"/contact"}>Contact</Link>
+          </div>
+          {/* Mobile sheet */}
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
