@@ -129,7 +129,7 @@ const ContactSection = () => {
                       onChange={handleChange}
                       required
                       className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-book-accent/50 focus:border-book-accent/50 outline-none transition-all"
-                      placeholder="jane@example.com"
+                      placeholder="Contact@charliecukwu.com"
                     />
                   </div>
                 </div>

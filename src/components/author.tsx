@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const AuthorSection = () => {
-  const { tagline, name, description, bio, contactButtonText, contactLink } =
-    authorData;
+  const { tagline, name, contactButtonText, contactLink } = authorData;
 
   return (
     <section id="author" className="py-20 px-3 md:px-0">
@@ -40,11 +39,36 @@ const AuthorSection = () => {
 
             <div className="w-16 h-1 bg-book-accent"></div>
 
-            <p className="text-lg leading-relaxed">{description}</p>
+            <p className="text-lg leading-relaxed">
+              Charlie O Ukwu was born at Iva Valley, near Enugu, Nigeria, the
+              first of five children, to Mr. & Mrs. Basil Maduka Ukwu. Under the
+              age of twelve, he lived with his grandparents, then with his
+              mother and father, and his stepmother and father, in alternate
+              years. At twelve, he moved to live with a teacher for two years
+              before going to high school.{" "}
+              <span className="font-semibold">
+                Out of all the logistical moves and uncertainties during his
+                childhood appeared an inner balance — emotional, psychological,
+                and structural — that is rare for someone his age.
+              </span>
+            </p>
 
-            <p className="text-foreground/80 leading-relaxed">{bio[0]}</p>
+            <p className="text-foreground/80 leading-relaxed">
+              With the inner balance secured, it is no wonder Government
+              College, Umuahia in Abia State, Ngeria, became the launching pad
+              for an academic pursuit that lasted 20 years, only interrupted by
+              three years of the Nigerian civil war.{" "}
+            </p>
 
-            <p className="text-foreground/80 leading-relaxed">{bio[1]}</p>
+            <p className="text-foreground/80 leading-relaxed">
+              Charlie&apos;s strategy was to prioritize education and readiness
+              over the pursuit of immediate financial goals. He discovered early
+              that the preparation of self, through the growth of human capital,
+              is the most rewarding and lasting investment one can make. He
+              believes that life&apos;s mission should be bigger than chasing
+              after money. Readers can explore this philosophy further in his
+              upcoming book, “Money Disorder”.
+            </p>
 
             <div className="pt-6">
               <Link
