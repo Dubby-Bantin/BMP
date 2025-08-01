@@ -43,10 +43,10 @@ const Footer = () => {
             <p className="text-sm text-white/70">
               Email:{" "}
               <a
-                href="mailto:contact@thenovel.com"
+                href="mailto:Charlie.Ukwu@bmpu.org"
                 className="hover:text-book-accent"
               >
-                contact@thenovel.com
+                Charlie.Ukwu@bmpu.org
               </a>
             </p>
           </div>

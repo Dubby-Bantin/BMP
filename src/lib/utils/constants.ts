@@ -79,7 +79,7 @@ const authorData = {
   ],
 
   contactButtonText: "Contact for Events",
-  contactLink: "#contact",
+  contactLink: "/contact",
 };
 
 const reviewsData = {

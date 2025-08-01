@@ -45,12 +45,9 @@ const AuthorSection = () => {
               age of twelve, he lived with his grandparents, then with his
               mother and father, and his stepmother and father, in alternate
               years. At twelve, he moved to live with a teacher for two years
-              before going to high school.{" "}
-              <span className="font-semibold">
-                Out of all the logistical moves and uncertainties during his
-                childhood appeared an inner balance — emotional, psychological,
-                and structural — that is rare for someone his age.
-              </span>
+              before going to high school. tical moves and uncertainties during
+              his childhood appeared an inner balance — emotional,
+              psychological, and structural — that is rare for someone his age.
             </p>
 
             <p className="text-foreground/80 leading-relaxed">

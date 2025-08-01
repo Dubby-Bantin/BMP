@@ -1,41 +1,8 @@
 "use client";
-import React, { useState } from "react";
-import { BiMailSend, BiMessageSquare, BiSend, BiUser } from "react-icons/bi";
+import React from "react";
+import { BiMailSend, BiMap, BiPhone, BiBuilding } from "react-icons/bi";
 
 const ContactSection = () => {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState("");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitMessage("Thank you for your message. We will be in touch soon!");
-      setFormState({ name: "", email: "", message: "" });
-
-      setTimeout(() => {
-        setSubmitMessage("");
-      }, 5000);
-    }, 1500);
-  };
 
   return (
     <section id="contact" className="py-20 bg-bg-gray-dark/30">
@@ -52,11 +19,40 @@ const ContactSection = () => {
             <div className="w-16 h-1 bg-book-accent mb-6" />
 
             <p className="text-lg text-foreground/80 mb-8 max-w-lg">
-              For event bookings and more enquiries, fill out the form to send
-              us an email.
+              For event bookings and more enquiries, please contact us using the information below.
             </p>
 
             <div className="space-y-6 mb-8">
+              <div className="flex items-start space-x-4">
+                <div className="bg-bg-gray-dark/10 p-3 rounded-full text-book-accent">
+                  <BiBuilding size={20} />
+                </div>
+                <div>
+                  <h3 className="font-medium">Organization</h3>
+                  <p className="text-foreground/70">bmpUnited</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-bg-gray-dark/10 p-3 rounded-full text-book-accent">
+                  <BiMap size={20} />
+                </div>
+                <div>
+                  <h3 className="font-medium">Address</h3>
+                  <p className="text-foreground/70">1501 Timber Wolf Dr. Durham, NC 27713</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-bg-gray-dark/10 p-3 rounded-full text-book-accent">
+                  <BiPhone size={20} />
+                </div>
+                <div>
+                  <h3 className="font-medium">Phone</h3>
+                  <a href="tel:8883370785" className="text-foreground/70">888.337.0785</a>
+                </div>
+              </div>
+              
               <div className="flex items-start space-x-4">
                 <div className="bg-bg-gray-dark/10 p-3 rounded-full text-book-accent">
                   <BiMailSend size={20} />
@@ -64,116 +60,34 @@ const ContactSection = () => {
                 <div>
                   <h3 className="font-medium">Email</h3>
                   <a
-                    href="mailto:Contact@charliecukwu.com"
+                    href="mailto:Charlie.Ukwu@bmpu.org"
                     className="text-foreground/70"
                   >
-                    Contact@charliecukwu.com
+                    Charlie.Ukwu@bmpu.org
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Form Column */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h3 className=" text-xl font-bold mb-6">Send a Message</h3>
-
-            {submitMessage ? (
-              <div className="bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 mb-6">
-                {submitMessage}
-              </div>
-            ) : null}
-
-            <form onSubmit={handleSubmit}>
-              <div className="space-y-4">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium mb-1"
-                  >
-                    Your Name
-                  </label>
-                  <div className="relative">
-                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-foreground/40">
-                      <BiUser size={18} />
-                    </div>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formState.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-book-accent/50 focus:border-book-accent/50 outline-none transition-all"
-                      placeholder="Jane Doe"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium mb-1"
-                  >
-                    Email Address
-                  </label>
-                  <div className="relative">
-                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-foreground/40">
-                      <BiMailSend size={18} />
-                    </div>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formState.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-book-accent/50 focus:border-book-accent/50 outline-none transition-all"
-                      placeholder="Contact@charliecukwu.com"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium mb-1"
-                  >
-                    Your Message
-                  </label>
-                  <div className="relative">
-                    <div className="absolute top-3 left-3 text-foreground/40">
-                      <BiMessageSquare size={18} />
-                    </div>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formState.message}
-                      onChange={handleChange}
-                      required
-                      rows={4}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-book-accent/50 focus:border-book-accent/50 outline-none transition-all"
-                      placeholder="Your message here..."
-                    />
-                  </div>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-bg-gray-dark text-white py-3 px-6 rounded-lg hover:bg-bg-gray-dark/90 transition-colors flex items-center justify-center"
-                >
-                  {isSubmitting ? (
-                    "Sending..."
-                  ) : (
-                    <>
-                      Send Message
-                      <BiSend size={16} className="ml-2" />
-                    </>
-                  )}
-                </button>
-              </div>
-            </form>
+          {/* Map Column */}
+          <div className="bg-white rounded-lg shadow-lg p-8 h-full">
+            <h3 className="text-xl font-bold mb-6">Our Location</h3>
+            <div className="aspect-video w-full bg-gray-100 rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.5662310975384!2d-78.9140344!3d35.8726247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace40f8e2b174d%3A0xf5e108d0485844!2s1501%20Timber%20Wolf%20Dr%2C%20Durham%2C%20NC%2027713!5e0!3m2!1sen!2sus!4v1652367892548!5m2!1sen!2sus" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="bmpUnited Location"
+              ></iframe>
+            </div>
+            <div className="mt-4 text-center">
+              <p className="text-foreground/70">Visit us at our office in Durham, NC</p>
+            </div>
           </div>
         </div>
       </div>
