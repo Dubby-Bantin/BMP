@@ -51,17 +51,17 @@ export default function MoneyDisorderPage() {
               The concept of readiness is at the heart of this book. It is a
               unique, personal quality—difficult to define precisely because it
               varies from one person to another. I also use the term JNSQ (Je ne
-              sais quoi, or “I don’t know what”) to describe it. JNSQ is that
-              essential “something” that makes an individual capable of handling
-              resources wisely. It is that foundation that must be in place to
-              support true success, impact, and fulfillment. It is that set of
-              preparation or state of readiness that makes sure that whatever
-              goals you set for yourself is accomplished. Money Disorder affects
-              both economic groups of society: the have-nots, presented in Part
-              1 of the book, and the haves, discussed in Part 2. The scope of
-              Part 1 of the book includes those who lack sufficient money to do
-              what they want, and the two types of money disorder that afflicts
-              them:
+              sais quoi, or “I don&apos;t know what”) to describe it. JNSQ is
+              that essential “something” that makes an individual capable of
+              handling resources wisely. It is that foundation that must be in
+              place to support true success, impact, and fulfillment. It is that
+              set of preparation or state of readiness that makes sure that
+              whatever goals you set for yourself is accomplished. Money
+              Disorder affects both economic groups of society: the have-nots,
+              presented in Part 1 of the book, and the haves, discussed in Part
+              2. The scope of Part 1 of the book includes those who lack
+              sufficient money to do what they want, and the two types of money
+              disorder that afflicts them:
             </p>
 
             <ul className="mb-2 list-disc pl-5">
@@ -94,12 +94,12 @@ export default function MoneyDisorderPage() {
             </p>
             <p className="mb-2">
               The purpose of Money Disorder is not simply to critique our
-              culture’s obsession with wealth. It is to offer a pathway out—to
-              challenge readers to focus first on building readiness. Whether
-              you find yourself hoping for your first breakthrough or managing
-              an abundance of resources, the call is the same: develop your
-              character, sharpen your wisdom, cultivate your vision. When JNSQ
-              is in place, money serves its rightful role as a tool, not a
+              culture&apos;s obsession with wealth. It is to offer a pathway
+              out—to challenge readers to focus first on building readiness.
+              Whether you find yourself hoping for your first breakthrough or
+              managing an abundance of resources, the call is the same: develop
+              your character, sharpen your wisdom, cultivate your vision. When
+              JNSQ is in place, money serves its rightful role as a tool, not a
               master. Without readiness, even great fortunes can become
               instruments of personal and societal harm. This message is
               especially urgent for young people, who may erroneously believe
